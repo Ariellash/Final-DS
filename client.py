@@ -1,17 +1,18 @@
 import requests
 import pandas as pd
+import json
+import ast
 
-data = pd.read_csv('')
-json = {'stories', 'fireplace', 'sqft', 'PrivatePool',
-                 'Year built', 'Remodeled year', 'baths/bed',
-                 'Parking', 'school_rating', 'density', 'status', 'propertyType']]}
+df = pd.read_json('test_example.json',orient='records')
+
 
 if __name__=='__main__':
-    r = requests.post('http://localhost:5000/add', json={'num': 5})
+    r = requests.post('http://localhost:5000/predict', json=df.to_json(orient='records'))
 
     print(r.status_code)
 
     if r.status_code == 200:
-        print(r.json()['result'])
+
+        print(r.json())
     else:
         print(r.text)
