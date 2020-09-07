@@ -18,7 +18,7 @@ For testing model on local host do the following:
 6. PyCharm Console will display the predicted Price
 
 
-The Project contains of 3 notebooks:
+The Project consists of 3 notebooks:
 1. DataPeparation notebook which prepares data for feature and model process, treats missing and invalid values, converts objects to numerical types
 2. FeaturePreparation notebook adds additional features by stacking and analyses by vizualization.
 Parameteres for 3 basic stacking algorithms(LinearRegression, DecisionTreeRegressor, RandomForestRegressor) are recieved from RandomizedSearchCV process and the fourth algorithm AdaBoostRegressor got its parameters from hyperopt process
