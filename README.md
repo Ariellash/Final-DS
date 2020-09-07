@@ -10,8 +10,8 @@ Final project for DS certificate
 Твоя задача — разработать модель, которая бы позволила обойти конкурентов по скорости и качеству совершения сделок.
 
 For testing model on local host do the following:
-Download PriceProd.py, Client.py, model.pkl, test_example.json to you localhost
-Opene PyCharm and open the Project with saved files
-Run PriceProd.py
-Run Client.py
-Consule will have the predicted Price
+1. Download PriceProd.py, Client.py, model.pkl, test_example.json to you localhost
+2. Open PyCharm and open the Project with saved files
+3. Run PriceProd.py
+4. Run Client.py
+5. Consule will have the predicted Price
