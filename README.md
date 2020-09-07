@@ -2,7 +2,7 @@
 Final project for DS certificate
 
 The goal of the project is to build the model that predicts the price of the property according to provided data. The project consists of 3 main steps:
-1. Data preparation
+1. Data preparation - the output ready_data.csv
 2. Feature analisys and preparation
 3. Model building, validation and saving for production use
 
