@@ -1,4 +1,4 @@
-# Final-DS
+# Property Price Prediction - DS Final Project
 Final project for DS certificate
 
 The goal of the project is to build the model that predicts the price of the property according to provided data. The project consists of 3 main steps:
