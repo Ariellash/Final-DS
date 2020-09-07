@@ -2,8 +2,8 @@
 Final project for DS certificate
 
 The goal of the project is to build the model that predicts the price of the property according to provided data. The project consists of 3 main steps:
-1. Data preparation - the output ready_data.csv
-2. Feature analisys and preparation
+1. Data preparation
+2. Feature analisys and preparation - the output train_data.npy
 3. Model building, validation and saving for production use
 
 
@@ -19,10 +19,14 @@ For testing model on local host do the following:
 
 
 The Project consists of 3 notebooks:
-1. DataPeparation notebook which prepares data for feature and model process, treats missing and invalid values, converts objects to numerical types
+1. DataPeparation notebook which prepares data for feature and model process, treats missing and invalid values, converts objects to numerical types. The output is ready_data.csv that is used in next step.
+
 2. FeaturePreparation notebook adds additional features by stacking and analyses by vizualization.
 Parameteres for 3 basic stacking algorithms(LinearRegression, DecisionTreeRegressor, RandomForestRegressor) are recieved from RandomizedSearchCV process and the fourth algorithm AdaBoostRegressor got its parameters from hyperopt process
-3. FinalModel train and validates the Final model. The Model that was used for regression is xgb.XGBRegressor with parameters recieved after hyperopt process. And was validated with kfold crossvalidation.
+
+The output is train_data.npy that is used in next step and test_example.json for model test.
+
+3. FinalModel train and validates the Final model. The Model that was used for regression is xgb.XGBRegressor with parameters recieved after hyperopt process. And was validated with kfold crossvalidation. The output is model.pkl.
 
 The prepoduction scripts that uses model.pkl save on localhost - PriceProd.py using Flask and Client.py that takes the test_example.json and sends it to PriceProd.py which returns the Price prediction.
 
